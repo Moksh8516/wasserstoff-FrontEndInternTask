@@ -1,4 +1,4 @@
-import React, { ReactElement, ReactNode } from 'react'
+import React from 'react'
 
 // components/Ticket.js
 import Image, { StaticImageData } from "next/image";
