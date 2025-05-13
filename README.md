@@ -36,12 +36,17 @@ Live demo hosted on **Netlify** 👉 [Add Netlify Link Here]
 
 components/
 ├── Ticket.tsx // Main reusable ticket component
+├── InputBox.tsx // Main reusable input field component
+├── Button.tsx // Main reusable button component
+├── SubHeading.tsx // Main reusable sub-heading component
 ├── Heading.tsx // Reusable heading with icon
 public/
 ├── icons/ // Logo and user images
-pages/
-├── index.tsx // Example usage of the Ticket component
-
+    ├── logo
+    ├── usericon
+(pages)/
+├── tickets 
+    ├── page.tsx // Example usage of the Ticket component   
 yaml
 Copy
 Edit
@@ -74,6 +79,7 @@ npm run dev
 # Visit http://localhost:3000
 
 
+
 🙌 Credits
 Built with ❤️ using Next.js and Tailwind CSS
 
@@ -86,3 +92,5 @@ Built with ❤️ using Next.js and Tailwind CSS
 3. Optionally add badges (build status, license, etc.).
 
 Want me to generate a full `package.json`, `.gitignore`, or GitHub Actions config for deployment too?
+
+vercel Active Link:-- https://wasserstoff-front-end-intern-task-lyart.vercel.app
