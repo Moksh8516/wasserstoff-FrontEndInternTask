@@ -9,7 +9,7 @@ interface inputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 
-function InputBox({label,placeholder, type, icon, ...inputprops}:inputProps) {
+function InputBox({label,placeholder, type, icon,errorMessage, ...inputprops}:inputProps) {
   return (
     <div className='flex flex-col gap-2'>
         <label className='text-gray-50'>{label}</label>
@@ -24,6 +24,7 @@ function InputBox({label,placeholder, type, icon, ...inputprops}:inputProps) {
         placeholder={placeholder}
         {...inputprops}/>
         </div>
+          {errorMessage && <span className='text-red-500 text-sm'>{errorMessage}</span>}
     </div>
   )
 }

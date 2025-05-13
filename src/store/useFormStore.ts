@@ -7,18 +7,18 @@ github: string;
 };
 
 type FormStore = {
-    FormData: FormData;
+    formData: FormData;
   setFormData: (data: Partial<FormData>) => void;
 }
 
 export const useFormStore = create<FormStore>((set) => ({
-  FormData: {
+  formData: {
     name: '',
     email: '',
     github: '',
   },
   setFormData: (data) =>
     set((state) => ({
-      FormData: { ...state.FormData, ...data },
+      formData: { ...state.formData, ...data },
     })),
 }));

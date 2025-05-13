@@ -1,4 +1,4 @@
-
+"use client"
 import Image from "next/image";
 import logo from "../../public/icons/logo.png"
 import Button from "@/components/Button";
@@ -8,7 +8,7 @@ import { Heading } from "@/components/Heading";
 import { SubHeading } from "@/components/SubHeading";
 import { FormEvent, useState } from "react";
 import { useFormStore } from "@/store/useFormStore";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   const [name, setName] = useState("");
