@@ -62,6 +62,5 @@ export function Ticket({
     <span className='rotate-90'>000199</span>
   </div>
 </div>
-
   );
 }
